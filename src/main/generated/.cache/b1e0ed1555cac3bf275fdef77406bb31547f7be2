@@ -1,13 +1,13 @@
-// 1.21	2026-02-11T18:53:18.130952	Weaponry/Model Definitions
+// 1.21	2026-02-11T22:52:09.5416652	Weaponry/Model Definitions
 bec889c1392e3ec5e410567b7f99c7e3468e11cb assets\weaponry\models\item\netherite_greatsword_gui.json
-c8fdcab46c3c853015fbe29a316e4d9e004d0017 assets\weaponry\models\item\netherite_greatsword.json
-346430ddc916d90a05a56373c53458be25066bc7 assets\weaponry\models\item\wooden_greatsword.json
+63236b6683e842cff0f9dd09c4ca7f191baa3a29 assets\weaponry\models\item\netherite_greatsword.json
+fedb424269a861f913efb51385c662241bdaef62 assets\weaponry\models\item\wooden_greatsword.json
 48a768dc530d2707c4ebef3059cc0a4d7c936068 assets\weaponry\models\item\iron_greatsword_gui.json
 f449db79a885812f2048c706cea6ba16965ba873 assets\weaponry\models\item\golden_greatsword_gui.json
 6ba1e33c8215c23b8d7f54c0414a84a1109c4737 assets\weaponry\models\item\diamond_greatsword_gui.json
-ba3d88c0908bfbeae8eff33f01c36b5413a9314d assets\weaponry\models\item\diamond_greatsword.json
-66a065d1923840009e7d80790f345c3070c8bbcf assets\weaponry\models\item\stone_greatsword.json
-d0c5a25c3e80d8ece5fae86e8859eec9a11209c8 assets\weaponry\models\item\golden_greatsword.json
+a64fc74b86908032d72edf5ba7d88f5abcbbfc46 assets\weaponry\models\item\diamond_greatsword.json
+f5192f570f06d58e26c96aff9bb506eb32f2f4cb assets\weaponry\models\item\stone_greatsword.json
+9330eb89eb072766fc5af0614a95a0c116683b36 assets\weaponry\models\item\golden_greatsword.json
 f4828db389163dda13c63b872f4e14e7fb774815 assets\weaponry\models\item\stone_greatsword_gui.json
 bb7ed1805d4e4f1e9821d8a7e49612757c3f69bc assets\weaponry\models\item\wooden_greatsword_gui.json
-2f29b87061fde255b244527a3a111d609d79d2ba assets\weaponry\models\item\iron_greatsword.json
+a8baf28426b1da7951e1c208199418f0527503a7 assets\weaponry\models\item\iron_greatsword.json

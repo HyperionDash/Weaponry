@@ -3,12 +3,14 @@ package net.hyper.weaponry.mixin;
 import com.llamalad7.mixinextras.sugar.Local;
 import net.hyper.weaponry.Weaponry;
 import net.hyper.weaponry.item.ModItems;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.item.ItemModels;
 import net.minecraft.client.render.item.ItemRenderer;
 import net.minecraft.client.render.model.BakedModel;
 import net.minecraft.client.render.model.json.ModelTransformationMode;
 import net.minecraft.client.util.ModelIdentifier;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Arm;
 import net.minecraft.util.Identifier;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -25,6 +27,10 @@ public abstract class ItemRendererMixin {
 
     @Shadow
     public abstract ItemModels getModels();
+
+    @Shadow
+    @Final
+    private MinecraftClient client;
 
     @ModifyVariable(
             method = "renderItem(Lnet/minecraft/item/ItemStack;Lnet/minecraft/client/render/model/json/ModelTransformationMode;ZLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;IILnet/minecraft/client/render/model/BakedModel;)V",
@@ -76,7 +82,13 @@ public abstract class ItemRendererMixin {
             return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "diamond_greatsword")));
         }
         if (stack.getItem() == ModItems.NETHERITE_GREATSWORD) {
-            return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "netherite_greatsword")));
+            assert client.player != null;
+            if (client.player.getMainArm() == Arm.RIGHT) {
+                return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "netherite_greatsword")));
+            }
+            else if (client.player.getMainArm() == Arm.LEFT) {
+                return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "netherite_greatsword_left")));
+            }
         }
 
         return bakedModel;

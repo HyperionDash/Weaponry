@@ -1,5 +1,5 @@
 {
-  "parent": "weaponry:item/template_greatsword",
+  "parent": "weaponry:item/template_greatsword_right",
   "textures": {
     "layer0": "weaponry:item/wooden_greatsword"
   }

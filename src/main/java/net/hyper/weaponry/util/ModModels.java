@@ -14,6 +14,6 @@ public class ModModels {
     }
 
     static {
-        GREATSWORD = item("template_greatsword", TextureKey.LAYER0);
+        GREATSWORD = item("template_greatsword_right", TextureKey.LAYER0);
     }
 }
