@@ -1,6 +1,6 @@
 {
   "parent": "weaponry:item/template_greatsword_left",
   "textures": {
-    "layer0": "weaponry:item/netherite_greatsword"
+    "layer0": "weaponry:item/iron_greatsword"
   }
 }

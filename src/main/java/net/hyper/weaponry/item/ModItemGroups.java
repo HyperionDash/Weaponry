@@ -1,9 +1,12 @@
 package net.hyper.weaponry.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hyper.weaponry.Weaponry;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -26,5 +29,15 @@ public class ModItemGroups {
 
     public static void registerItemGroups() {
         Weaponry.LOGGER.info("Registering Item Groups for " + Weaponry.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.addAfter(Items.NETHERITE_SWORD,
+                    ModItems.WOODEN_GREATSWORD,
+                    ModItems.STONE_GREATSWORD,
+                    ModItems.IRON_GREATSWORD,
+                    ModItems.GOLDEN_GREATSWORD,
+                    ModItems.DIAMOND_GREATSWORD,
+                    ModItems.NETHERITE_GREATSWORD);
+        });
     }
 }

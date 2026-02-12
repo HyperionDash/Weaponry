@@ -34,9 +34,5 @@ public class ModItems {
 
     public static void registerModItems() {
         Weaponry.LOGGER.info("Registering Mod Items for " + Weaponry.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
-            entries.addAfter(Items.NETHERITE_SWORD,WOODEN_GREATSWORD,STONE_GREATSWORD,IRON_GREATSWORD,GOLDEN_GREATSWORD,DIAMOND_GREATSWORD,NETHERITE_GREATSWORD);
-        });
     }
 }
