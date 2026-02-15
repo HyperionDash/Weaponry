@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 import net.hyper.weaponry.item.ModItems;
 import net.hyper.weaponry.util.ModTags;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 
@@ -17,6 +18,29 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        getOrCreateTagBuilder(ModTags.Items.OFFHAND_WHITELIST)
+                .add(Items.POTION)
+                .add(Items.LINGERING_POTION)
+                .add(Items.SPLASH_POTION)
+                .add(Items.SNOWBALL)
+                .add(Items.EGG)
+                .add(Items.WIND_CHARGE)
+                .add(Items.LAVA_BUCKET)
+                .add(Items.PUFFERFISH_BUCKET)
+                .add(Items.FLINT_AND_STEEL)
+                .add(Items.FIRE_CHARGE)
+                .add(Items.FISHING_ROD)
+                .add(Items.ENDER_PEARL)
+                .add(Items.FIREWORK_ROCKET)
+                .add(Items.END_CRYSTAL)
+                .add(Items.TOTEM_OF_UNDYING)
+                .add(Items.SHIELD)
+                .add(Items.CROSSBOW)
+                .add(Items.BOW);
+
+        getOrCreateTagBuilder(ModTags.Items.DUAL_HANDED_WEAPONS)
+                .addTag(ModTags.Items.GREATSWORDS);
+
         getOrCreateTagBuilder(ModTags.Items.GREATSWORDS)
                 .add(ModItems.WOODEN_GREATSWORD)
                 .add(ModItems.STONE_GREATSWORD)

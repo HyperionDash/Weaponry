@@ -1,0 +1,22 @@
+{
+  "values": [
+    "minecraft:potion",
+    "minecraft:lingering_potion",
+    "minecraft:splash_potion",
+    "minecraft:snowball",
+    "minecraft:egg",
+    "minecraft:wind_charge",
+    "minecraft:lava_bucket",
+    "minecraft:pufferfish_bucket",
+    "minecraft:flint_and_steel",
+    "minecraft:fire_charge",
+    "minecraft:fishing_rod",
+    "minecraft:ender_pearl",
+    "minecraft:firework_rocket",
+    "minecraft:end_crystal",
+    "minecraft:totem_of_undying",
+    "minecraft:shield",
+    "minecraft:crossbow",
+    "minecraft:bow"
+  ]
+}

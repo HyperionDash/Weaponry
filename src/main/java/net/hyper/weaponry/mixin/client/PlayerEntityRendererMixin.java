@@ -17,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class PlayerEntityRendererMixin {
     @Inject(method = "getArmPose", at = @At("TAIL"), cancellable = true)
     private static void customArmPose(AbstractClientPlayerEntity player, Hand hand, CallbackInfoReturnable<BipedEntityModel.ArmPose> cir) {
-        if (player.getStackInHand(Hand.MAIN_HAND).isIn(ModTags.Items.GREATSWORDS))
+        if (player.getStackInHand(Hand.MAIN_HAND).isIn(ModTags.Items.DUAL_HANDED_WEAPONS))
             cir.setReturnValue(BipedEntityModel.ArmPose.CROSSBOW_CHARGE);
     }
 }

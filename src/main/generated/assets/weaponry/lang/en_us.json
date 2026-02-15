@@ -1,0 +1,12 @@
+{
+  "item.weaponry.diamond_greatsword": "Diamond Greatsword",
+  "item.weaponry.golden_greatsword": "Golden Greatsword",
+  "item.weaponry.iron_greatsword": "Iron Greatsword",
+  "item.weaponry.netherite_greatsword": "Netherite Greatsword",
+  "item.weaponry.stone_greatsword": "Stone Greatsword",
+  "item.weaponry.wooden_greatsword": "Wooden Greatsword",
+  "itemgroup.weaponry.weaponry": "Weaponry",
+  "tag.item.weaponry.dual_handed_weapons": "Dual Handed Weapons",
+  "tag.item.weaponry.greatswords": "Greatswords",
+  "tag.item.weaponry.offhand_whitelist": "Offhand Whitelist"
+}

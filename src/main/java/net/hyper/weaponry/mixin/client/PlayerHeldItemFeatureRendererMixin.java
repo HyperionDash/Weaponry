@@ -30,13 +30,19 @@ public abstract class PlayerHeldItemFeatureRendererMixin<T extends PlayerEntity,
     @Inject(method = "renderItem", at = @At("HEAD"), cancellable = true)
     protected void renderItem(LivingEntity entity, ItemStack stack, ModelTransformationMode transformationMode, Arm arm, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, CallbackInfo ci) {
         if (!entity.isUsingItem()) {
-            if ((entity.getMainArm() == Arm.RIGHT && arm == Arm.LEFT) && entity.getMainHandStack().isIn(ModTags.Items.GREATSWORDS)) {
-                ci.cancel();
-                return;
+            if ((entity.getMainArm() == Arm.RIGHT && arm == Arm.LEFT) && entity.getMainHandStack().isIn(ModTags.Items.DUAL_HANDED_WEAPONS)) {
+                if (entity.getOffHandStack().isIn(ModTags.Items.OFFHAND_WHITELIST)) return;
+                else {
+                    ci.cancel();
+                    return;
+                }
             }
-            if ((entity.getMainArm() == Arm.LEFT && arm == Arm.RIGHT) && entity.getMainHandStack().isIn(ModTags.Items.GREATSWORDS)) {
-                ci.cancel();
-                return;
+            if ((entity.getMainArm() == Arm.LEFT && arm == Arm.RIGHT) && entity.getMainHandStack().isIn(ModTags.Items.DUAL_HANDED_WEAPONS)) {
+                if (entity.getOffHandStack().isIn(ModTags.Items.OFFHAND_WHITELIST)) return;
+                else {
+                    ci.cancel();
+                    return;
+                }
             }
             super.renderItem(entity, stack, transformationMode, arm, matrices, vertexConsumers, light);
         }
