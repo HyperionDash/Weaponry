@@ -1,4 +1,4 @@
-package net.hyper.weaponry.item;
+package net.hyper.weaponry.registry;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -21,6 +21,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.WOODEN_GREATSWORD);
                         entries.add(ModItems.STONE_GREATSWORD);
+                        entries.add(ModItems.COPPER_GREATSWORD);
                         entries.add(ModItems.IRON_GREATSWORD);
                         entries.add(ModItems.GOLDEN_GREATSWORD);
                         entries.add(ModItems.DIAMOND_GREATSWORD);
@@ -34,10 +35,40 @@ public class ModItemGroups {
             entries.addAfter(Items.NETHERITE_SWORD,
                     ModItems.WOODEN_GREATSWORD,
                     ModItems.STONE_GREATSWORD,
+                    ModItems.COPPER_GREATSWORD,
                     ModItems.IRON_GREATSWORD,
                     ModItems.GOLDEN_GREATSWORD,
                     ModItems.DIAMOND_GREATSWORD,
                     ModItems.NETHERITE_GREATSWORD);
+
+            entries.addAfter(Items.LEATHER_BOOTS,
+                    ModItems.COPPER_HELMET,
+                    ModItems.COPPER_CHESTPLATE,
+                    ModItems.COPPER_LEGGINGS,
+                    ModItems.COPPER_BOOTS);
+
+            entries.addAfter(Items.STONE_SWORD,
+                    ModItems.COPPER_SWORD);
+
+            entries.addAfter(Items.STONE_AXE,
+                    ModItems.COPPER_AXE);
+
+            entries.addAfter(Items.LEATHER_HORSE_ARMOR,
+                    ModItems.COPPER_HORSE_ARMOR);
+
+            entries.addAfter(Items.DIAMOND_HORSE_ARMOR,
+                    ModItems.NETHERITE_HORSE_ARMOR);
+
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+            entries.addAfter(Items.STONE_HOE,
+                    ModItems.COPPER_SHOVEL,
+                    ModItems.COPPER_PICKAXE,
+                    ModItems.COPPER_AXE,
+                    ModItems.COPPER_HOE);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.addAfter(Items.IRON_NUGGET, ModItems.COPPER_NUGGET);
         });
     }
 }

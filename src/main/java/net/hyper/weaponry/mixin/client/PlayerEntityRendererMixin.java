@@ -2,7 +2,7 @@ package net.hyper.weaponry.mixin.client;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.hyper.weaponry.util.ModTags;
+import net.hyper.weaponry.registry.ModTags;
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.client.render.entity.PlayerEntityRenderer;
 import net.minecraft.client.render.entity.model.BipedEntityModel;

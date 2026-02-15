@@ -1,6 +1,6 @@
 package net.hyper.weaponry.mixin.client;
 
-import net.hyper.weaponry.util.ModTags;
+import net.hyper.weaponry.registry.ModTags;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.feature.FeatureRendererContext;
 import net.minecraft.client.render.entity.feature.HeldItemFeatureRenderer;

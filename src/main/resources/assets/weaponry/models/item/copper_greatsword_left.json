@@ -1,0 +1,6 @@
+{
+  "parent": "weaponry:item/template_greatsword_left",
+  "textures": {
+    "layer0": "weaponry:item/copper_greatsword"
+  }
+}

@@ -2,8 +2,10 @@ package net.hyper.weaponry;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.hyper.weaponry.item.ModItemGroups;
-import net.hyper.weaponry.item.ModItems;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.hyper.weaponry.registry.ModItemGroups;
+import net.hyper.weaponry.registry.ModItems;
+import net.hyper.weaponry.registry.ModSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,5 +17,8 @@ public class Weaponry implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
+		ModSounds.registerSounds();
+
+		FuelRegistry.INSTANCE.add(ModItems.WOODEN_GREATSWORD, 200);
 	}
 }

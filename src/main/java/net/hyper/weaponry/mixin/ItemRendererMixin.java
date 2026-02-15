@@ -2,7 +2,7 @@ package net.hyper.weaponry.mixin;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import net.hyper.weaponry.Weaponry;
-import net.hyper.weaponry.item.ModItems;
+import net.hyper.weaponry.registry.ModItems;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.item.ItemModels;
 import net.minecraft.client.render.item.ItemRenderer;
@@ -44,6 +44,9 @@ public abstract class ItemRendererMixin {
         if (stack.getItem() == ModItems.STONE_GREATSWORD && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
             return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "stone_greatsword_gui")));
         }
+        if (stack.getItem() == ModItems.COPPER_GREATSWORD && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
+            return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "copper_greatsword_gui")));
+        }
         if (stack.getItem() == ModItems.IRON_GREATSWORD && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
             return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "iron_greatsword_gui")));
         }
@@ -72,35 +75,48 @@ public abstract class ItemRendererMixin {
             }
             else if (client.player.getMainArm() == Arm.LEFT) {
                 return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "wooden_greatsword_left")));
-            }        }
+            }
+        }
         if (stack.getItem() == ModItems.STONE_GREATSWORD) {
             if (client.player.getMainArm() == Arm.RIGHT) {
                 return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "stone_greatsword")));
             }
             else if (client.player.getMainArm() == Arm.LEFT) {
                 return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "stone_greatsword_left")));
-            }        }
+            }
+        }
+        if (stack.getItem() == ModItems.COPPER_GREATSWORD) {
+            if (client.player.getMainArm() == Arm.RIGHT) {
+                return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "copper_greatsword")));
+            }
+            else if (client.player.getMainArm() == Arm.LEFT) {
+                return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "copper_greatsword_left")));
+            }
+        }
         if (stack.getItem() == ModItems.IRON_GREATSWORD) {
             if (client.player.getMainArm() == Arm.RIGHT) {
                 return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "iron_greatsword")));
             }
             else if (client.player.getMainArm() == Arm.LEFT) {
                 return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "iron_greatsword_left")));
-            }        }
+            }
+        }
         if (stack.getItem() == ModItems.GOLDEN_GREATSWORD) {
             if (client.player.getMainArm() == Arm.RIGHT) {
                 return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "golden_greatsword")));
             }
             else if (client.player.getMainArm() == Arm.LEFT) {
                 return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "golden_greatsword_left")));
-            }        }
+            }
+        }
         if (stack.getItem() == ModItems.DIAMOND_GREATSWORD) {
             if (client.player.getMainArm() == Arm.RIGHT) {
                 return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "diamond_greatsword")));
             }
             else if (client.player.getMainArm() == Arm.LEFT) {
                 return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "diamond_greatsword_left")));
-            }        }
+            }
+        }
         if (stack.getItem() == ModItems.NETHERITE_GREATSWORD) {
             if (client.player.getMainArm() == Arm.RIGHT) {
                 return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "netherite_greatsword")));

@@ -1,4 +1,4 @@
-package net.hyper.weaponry.util;
+package net.hyper.weaponry.registry;
 
 import java.util.Optional;
 

@@ -1,4 +1,4 @@
-package net.hyper.weaponry.util;
+package net.hyper.weaponry.registry;
 
 import net.hyper.weaponry.Weaponry;
 import net.minecraft.item.Item;
