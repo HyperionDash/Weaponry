@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "gold_nugget",
+  "ingredient": {
+    "item": "weaponry:golden_greatsword"
+  },
+  "result": {
+    "id": "minecraft:gold_nugget"
+  }
+}

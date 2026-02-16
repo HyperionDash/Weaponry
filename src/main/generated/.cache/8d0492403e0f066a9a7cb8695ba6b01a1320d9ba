@@ -1,0 +1,14 @@
+// 1.21.1	2026-02-16T20:57:03.4517473	Weaponry/Tags for minecraft:item
+dedc21456bcf8e5be55322e1afef8376f25cbf3b data\minecraft\tags\item\breaks_decorated_pots.json
+dedc21456bcf8e5be55322e1afef8376f25cbf3b data\minecraft\tags\item\enchantable\sword.json
+dedc21456bcf8e5be55322e1afef8376f25cbf3b data\c\tags\item\tools.json
+dedc21456bcf8e5be55322e1afef8376f25cbf3b data\minecraft\tags\item\enchantable\sharp_weapon.json
+6171ca1de35efc61c773618f429e2085af647365 data\weaponry\tags\item\offhand_whitelist.json
+dedc21456bcf8e5be55322e1afef8376f25cbf3b data\minecraft\tags\item\enchantable\weapon.json
+dedc21456bcf8e5be55322e1afef8376f25cbf3b data\c\tags\item\tools\melee_weapon.json
+dedc21456bcf8e5be55322e1afef8376f25cbf3b data\minecraft\tags\item\enchantable\durability.json
+dedc21456bcf8e5be55322e1afef8376f25cbf3b data\c\tags\item\enchantables.json
+dedc21456bcf8e5be55322e1afef8376f25cbf3b data\weaponry\tags\item\dual_handed_weapons.json
+dedc21456bcf8e5be55322e1afef8376f25cbf3b data\minecraft\tags\item\enchantable\vanishing.json
+dedc21456bcf8e5be55322e1afef8376f25cbf3b data\minecraft\tags\item\enchantable\fire_aspect.json
+281b33aadbf1e138fb55811c34adda20f3e4bd34 data\weaponry\tags\item\greatswords.json

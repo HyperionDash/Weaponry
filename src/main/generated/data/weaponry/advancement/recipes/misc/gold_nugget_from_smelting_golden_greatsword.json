@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherite_greatsword": {
+    "has_golden_greatsword": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:netherite_ingot"
+            "items": "weaponry:golden_greatsword"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "weaponry:netherite_greatsword_smithing"
+        "recipe": "weaponry:gold_nugget_from_smelting_golden_greatsword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_netherite_greatsword"
+      "has_golden_greatsword"
     ]
   ],
   "rewards": {
     "recipes": [
-      "weaponry:netherite_greatsword_smithing"
+      "weaponry:gold_nugget_from_smelting_golden_greatsword"
     ]
   }
 }

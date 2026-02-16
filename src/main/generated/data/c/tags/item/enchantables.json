@@ -1,9 +1,5 @@
 {
   "values": [
-    "#weaponry:greatswords",
-    "minecraft:copper_helmet",
-    "minecraft:copper_chestplate",
-    "minecraft:copper_leggings",
-    "minecraft:copper_boots"
+    "#weaponry:greatswords"
   ]
 }

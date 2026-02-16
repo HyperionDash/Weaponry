@@ -1,8 +1,0 @@
-{
-  "item": "weaponry:copper_greatsword",
-  "scale": [2.0, 2.0, 1.0],
-  "rotation": [180.0, 0.0, -180.0],
-  "translation": [0.05, -0.1, 0.35],
-  "mode": "NONE",
-  "sway": 0.5
-}

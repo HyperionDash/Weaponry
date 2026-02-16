@@ -44,9 +44,6 @@ public abstract class ItemRendererMixin {
         if (stack.getItem() == ModItems.STONE_GREATSWORD && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
             return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "stone_greatsword_gui")));
         }
-        if (stack.getItem() == ModItems.COPPER_GREATSWORD && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
-            return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "copper_greatsword_gui")));
-        }
         if (stack.getItem() == ModItems.IRON_GREATSWORD && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
             return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "iron_greatsword_gui")));
         }
@@ -83,14 +80,6 @@ public abstract class ItemRendererMixin {
             }
             else if (client.player.getMainArm() == Arm.LEFT) {
                 return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "stone_greatsword_left")));
-            }
-        }
-        if (stack.getItem() == ModItems.COPPER_GREATSWORD) {
-            if (client.player.getMainArm() == Arm.RIGHT) {
-                return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "copper_greatsword")));
-            }
-            else if (client.player.getMainArm() == Arm.LEFT) {
-                return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "copper_greatsword_left")));
             }
         }
         if (stack.getItem() == ModItems.IRON_GREATSWORD) {

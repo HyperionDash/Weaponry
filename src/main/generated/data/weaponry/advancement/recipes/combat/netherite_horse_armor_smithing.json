@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherite_greatsword": {
+    "has_netherite_horse_armor": {
       "conditions": {
         "items": [
           {
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "weaponry:netherite_greatsword_smithing"
+        "recipe": "weaponry:netherite_horse_armor_smithing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_netherite_greatsword"
+      "has_netherite_horse_armor"
     ]
   ],
   "rewards": {
     "recipes": [
-      "weaponry:netherite_greatsword_smithing"
+      "weaponry:netherite_horse_armor_smithing"
     ]
   }
 }

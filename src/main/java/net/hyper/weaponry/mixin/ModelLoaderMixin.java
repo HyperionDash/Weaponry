@@ -19,7 +19,6 @@ public abstract class ModelLoaderMixin {
     private void onInit(CallbackInfo ci) {
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "wooden_greatsword_gui")));
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "stone_greatsword_gui")));
-        this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "copper_greatsword_gui")));
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "iron_greatsword_gui")));
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "golden_greatsword_gui")));
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "diamond_greatsword_gui")));
@@ -27,7 +26,6 @@ public abstract class ModelLoaderMixin {
 
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "wooden_greatsword_left")));
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "stone_greatsword_left")));
-        this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "copper_greatsword_left")));
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "iron_greatsword_left")));
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "golden_greatsword_left")));
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Weaponry.MOD_ID, "diamond_greatsword_left")));

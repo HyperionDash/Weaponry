@@ -1,7 +1,5 @@
-## 0.2a+1.21 Changelog:
-- backported copper gear
-- added copper greatswords
-- added copper and netherite horse armors
+## 0.1d+1.21 Changelog:
+- added netherite horse armor
 - fixed iron and golden greatswords not being able to be smelted down into nuggets 
 - fixed wooden greatswords not being usable as fuel 
 - some internal code changes

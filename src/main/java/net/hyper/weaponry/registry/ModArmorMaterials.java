@@ -17,15 +17,6 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class ModArmorMaterials {
-    public static final RegistryEntry<ArmorMaterial> COPPER = registerArmorMaterial("copper",
-            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.BOOTS, 1);
-                map.put(ArmorItem.Type.LEGGINGS, 2);
-                map.put(ArmorItem.Type.CHESTPLATE, 3);
-                map.put(ArmorItem.Type.HELMET, 4);
-                map.put(ArmorItem.Type.BODY, 4);
-            }), 8, ModSounds.ITEM_ARMOR_EQUIP_COPPER, () -> Ingredient.ofItems(Items.COPPER_INGOT),
-                    List.of(new ArmorMaterial.Layer(Identifier.of(Weaponry.MOD_ID, "copper"))), 0,0));
     public static final RegistryEntry<ArmorMaterial> NETHERITE = registerArmorMaterial("netherite",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
                 map.put(ArmorItem.Type.BOOTS, 3);
