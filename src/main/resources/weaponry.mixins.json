@@ -1,10 +1,9 @@
 {
 	"required": true,
 	"package": "net.hyper.weaponry.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ItemRendererMixin",
-		"ModelLoaderMixin"
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"AvatarRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

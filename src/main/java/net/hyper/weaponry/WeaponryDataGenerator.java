@@ -9,9 +9,8 @@ public class WeaponryDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-		pack.addProvider(ModItemTagProvider::new);
-		pack.addProvider(ModModelProvider::new);
-		pack.addProvider(ModRecipeProvider::new);
-		pack.addProvider(ModLangProvider::new);
+		pack.addProvider(WeaponryItemTagGen::new);
+		pack.addProvider(WeaponryLangGen::new);
+		pack.addProvider(WeaponryRecipeGen::new);
 	}
 }

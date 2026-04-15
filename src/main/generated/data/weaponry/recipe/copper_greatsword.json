@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:copper_ingot",
+    "0": "minecraft:stick"
+  },
+  "pattern": [
+    "  #",
+    "## ",
+    "0# "
+  ],
+  "result": {
+    "id": "weaponry:copper_greatsword"
+  }
+}

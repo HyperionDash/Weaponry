@@ -1,18 +1,9 @@
-## 0.1d+1.21 Changelog:
-- added netherite horse armor
-- fixed iron and golden greatswords not being able to be smelted down into nuggets 
-- fixed wooden greatswords not being usable as fuel 
-- some internal code changes
+# 1.0a+26.1:
 
-## 0.1c+1.21 Changelog:
-- moved hand positioning and visual disabling of the offhand to its own tag
-- added a whitelist tag to keep specific items visual in the offhand while holding greatswords
-- nerfed the extended reach on greatswords
-
-## 0.1b+1.21 Changelog:
-- fixed a visual bug where the Greatswords would look wierd when the left-handed option was enabled
-- some internal code changes
-
-## 0.1a+1.21 Changelog:
-initial release
-- added Greatswords
+### 1.0a+26.1-DEV+0.1a
+- updated to 26.1
+- added copper greatswords
+- added greatswords to chest loot tables
+- updated the gui texture for spears (toggleable)
+- greatswords no longer display their attack range in the tooltip
+- fixed a bug where netherite greatswords could burn
