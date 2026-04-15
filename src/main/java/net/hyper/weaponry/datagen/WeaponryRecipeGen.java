@@ -9,7 +9,9 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.CookingBookCategory;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class WeaponryRecipeGen extends FabricRecipeProvider {
@@ -75,9 +77,9 @@ public class WeaponryRecipeGen extends FabricRecipeProvider {
                 netheriteSmithing(WeaponryItems.DIAMOND_GREATSWORD, RecipeCategory.COMBAT, WeaponryItems.NETHERITE_GREATSWORD);
 
                 // Smelting
-                smeltingResultFromBase(Items.COPPER_NUGGET, WeaponryItems.COPPER_GREATSWORD);
-                smeltingResultFromBase(Items.IRON_NUGGET, WeaponryItems.IRON_GREATSWORD);
-                smeltingResultFromBase(Items.GOLD_NUGGET, WeaponryItems.GOLDEN_GREATSWORD);
+                oreSmelting(List.of(WeaponryItems.COPPER_GREATSWORD), RecipeCategory.MISC, CookingBookCategory.MISC, Items.COPPER_NUGGET, 0.1f, 200, "copper_nugget");
+                oreSmelting(List.of(WeaponryItems.IRON_GREATSWORD), RecipeCategory.MISC, CookingBookCategory.MISC, Items.IRON_NUGGET, 0.1f, 200, "iron_nugget");
+                oreSmelting(List.of(WeaponryItems.GOLDEN_GREATSWORD), RecipeCategory.MISC, CookingBookCategory.MISC, Items.GOLD_NUGGET, 0.1f, 200, "gold_nugget");
             }
         };
     }

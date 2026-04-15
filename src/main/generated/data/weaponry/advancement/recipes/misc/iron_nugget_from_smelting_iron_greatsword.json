@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_copper_greatsword": {
+    "has_iron_greatsword": {
       "conditions": {
         "items": [
           {
-            "items": "weaponry:copper_greatsword"
+            "items": "weaponry:iron_greatsword"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "weaponry:copper_nugget"
+        "recipe": "weaponry:iron_nugget_from_smelting_iron_greatsword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_copper_greatsword"
+      "has_iron_greatsword"
     ]
   ],
   "rewards": {
     "recipes": [
-      "weaponry:copper_nugget"
+      "weaponry:iron_nugget_from_smelting_iron_greatsword"
     ]
   }
 }
