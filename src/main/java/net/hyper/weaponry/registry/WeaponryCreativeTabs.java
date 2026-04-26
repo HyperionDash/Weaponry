@@ -25,6 +25,13 @@ public class WeaponryCreativeTabs {
                         entries.accept(WeaponryItems.GOLDEN_GREATSWORD);
                         entries.accept(WeaponryItems.DIAMOND_GREATSWORD);
                         entries.accept(WeaponryItems.NETHERITE_GREATSWORD);
+
+                        entries.accept(WeaponryItems.WOODEN_SHIELD);
+                        entries.accept(WeaponryItems.COPPER_SHIELD);
+                        entries.accept(WeaponryItems.IRON_SHIELD);
+                        entries.accept(WeaponryItems.GOLDEN_SHIELD);
+                        entries.accept(WeaponryItems.DIAMOND_SHIELD);
+                        entries.accept(WeaponryItems.NETHERITE_SHIELD);
                     }).build());
 
     public static void registerCreativeTabs() {
@@ -36,6 +43,12 @@ public class WeaponryCreativeTabs {
                     WeaponryItems.GOLDEN_GREATSWORD,
                     WeaponryItems.DIAMOND_GREATSWORD,
                     WeaponryItems.NETHERITE_GREATSWORD);
+            entries.insertAfter(Items.SHIELD, WeaponryItems.WOODEN_SHIELD,
+                    WeaponryItems.COPPER_SHIELD,
+                    WeaponryItems.IRON_SHIELD,
+                    WeaponryItems.GOLDEN_SHIELD,
+                    WeaponryItems.DIAMOND_SHIELD,
+                    WeaponryItems.NETHERITE_SHIELD);
         });
     }
 }

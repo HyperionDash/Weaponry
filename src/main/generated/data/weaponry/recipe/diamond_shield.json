@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:diamond",
+    "0": "#minecraft:wooden_tool_materials"
+  },
+  "pattern": [
+    "###",
+    "000",
+    " 0 "
+  ],
+  "result": {
+    "id": "weaponry:diamond_shield"
+  }
+}

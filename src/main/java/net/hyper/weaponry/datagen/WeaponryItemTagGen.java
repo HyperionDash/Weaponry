@@ -26,6 +26,13 @@ public class WeaponryItemTagGen extends FabricTagsProvider.ItemTagsProvider {
                 .add(WeaponryItems.WOODEN_GREATSWORD)
                 .add(WeaponryItems.IRON_GREATSWORD)
                 .add(WeaponryItems.COPPER_GREATSWORD);
+        valueLookupBuilder(WeaponryItemTags.SHIELDS)
+                .add(WeaponryItems.DIAMOND_SHIELD)
+                .add(WeaponryItems.GOLDEN_SHIELD)
+                .add(WeaponryItems.NETHERITE_SHIELD)
+                .add(WeaponryItems.WOODEN_SHIELD)
+                .add(WeaponryItems.IRON_SHIELD)
+                .add(WeaponryItems.COPPER_SHIELD);
         valueLookupBuilder(WeaponryItemTags.DUAL_HANDED_WEAPONS)
                 .addTag(WeaponryItemTags.GREATSWORDS);
 
@@ -33,13 +40,18 @@ public class WeaponryItemTagGen extends FabricTagsProvider.ItemTagsProvider {
         valueLookupBuilder(ConventionalItemTags.MELEE_WEAPON_TOOLS)
                 .addTag(WeaponryItemTags.GREATSWORDS);
         valueLookupBuilder(ConventionalItemTags.ENCHANTABLES)
-                .addTag(WeaponryItemTags.GREATSWORDS);
+                .addTag(WeaponryItemTags.GREATSWORDS)
+                .addTag(WeaponryItemTags.SHIELDS);
         valueLookupBuilder(ConventionalItemTags.TOOLS)
-                .addTag(WeaponryItemTags.GREATSWORDS);
+                .addTag(WeaponryItemTags.GREATSWORDS)
+                .addTag(WeaponryItemTags.SHIELDS);
+        valueLookupBuilder(ConventionalItemTags.SHIELD_TOOLS)
+                .addTag(WeaponryItemTags.SHIELDS);
 
         // Enchantments
         valueLookupBuilder(ItemTags.VANISHING_ENCHANTABLE)
-                .addTag(WeaponryItemTags.GREATSWORDS);
+                .addTag(WeaponryItemTags.GREATSWORDS)
+                .addTag(WeaponryItemTags.SHIELDS);
         valueLookupBuilder(ItemTags.WEAPON_ENCHANTABLE)
                 .addTag(WeaponryItemTags.GREATSWORDS);
         valueLookupBuilder(ItemTags.SWEEPING_ENCHANTABLE)
@@ -51,7 +63,8 @@ public class WeaponryItemTagGen extends FabricTagsProvider.ItemTagsProvider {
         valueLookupBuilder(ItemTags.FIRE_ASPECT_ENCHANTABLE)
                 .addTag(WeaponryItemTags.GREATSWORDS);
         valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE)
-                .addTag(WeaponryItemTags.GREATSWORDS);
+                .addTag(WeaponryItemTags.GREATSWORDS)
+                .addTag(WeaponryItemTags.SHIELDS);
 
         // Extra
         valueLookupBuilder(ItemTags.SWORDS)

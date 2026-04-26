@@ -1,13 +1,21 @@
 {
   "creativetab.weaponry.weaponry": "Weaponry",
   "item.weaponry.copper_greatsword": "Copper Greatsword",
+  "item.weaponry.copper_shield": "Copper Shield",
   "item.weaponry.diamond_greatsword": "Diamond Greatsword",
+  "item.weaponry.diamond_shield": "Diamond Shield",
   "item.weaponry.golden_greatsword": "Golden Greatsword",
+  "item.weaponry.golden_shield": "Golden Shield",
   "item.weaponry.iron_greatsword": "Iron Greatsword",
+  "item.weaponry.iron_shield": "Iron Shield",
   "item.weaponry.netherite_greatsword": "Netherite Greatsword",
+  "item.weaponry.netherite_shield": "Netherite Shield",
   "item.weaponry.stone_greatsword": "Stone Greatsword",
   "item.weaponry.wooden_greatsword": "Wooden Greatsword",
+  "item.weaponry.wooden_shield": "Wooden Shield",
   "tag.item.weaponry.dual_handed_weapons": "Dual Handed Weapons",
   "tag.item.weaponry.greatswords": "Greatswords",
+  "tag.item.weaponry.shields": "Shields",
+  "text.weaponry.cheaper_trims": "Cheaper Trims",
   "text.weaponry.improved_spears": "Improved Spears"
 }

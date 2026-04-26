@@ -23,12 +23,21 @@ public class WeaponryLangGen extends FabricLanguageProvider {
         translationBuilder.add(WeaponryItems.DIAMOND_GREATSWORD, "Diamond Greatsword");
         translationBuilder.add(WeaponryItems.NETHERITE_GREATSWORD, "Netherite Greatsword");
 
+        translationBuilder.add(WeaponryItems.WOODEN_SHIELD, "Wooden Shield");
+        translationBuilder.add(WeaponryItems.COPPER_SHIELD, "Copper Shield");
+        translationBuilder.add(WeaponryItems.IRON_SHIELD, "Iron Shield");
+        translationBuilder.add(WeaponryItems.GOLDEN_SHIELD, "Golden Shield");
+        translationBuilder.add(WeaponryItems.DIAMOND_SHIELD, "Diamond Shield");
+        translationBuilder.add(WeaponryItems.NETHERITE_SHIELD, "Netherite Shield");
+
         // Tags
-        translationBuilder.add(WeaponryItemTags.GREATSWORDS, "Greatswords");
         translationBuilder.add(WeaponryItemTags.DUAL_HANDED_WEAPONS, "Dual Handed Weapons");
+        translationBuilder.add(WeaponryItemTags.GREATSWORDS, "Greatswords");
+        translationBuilder.add(WeaponryItemTags.SHIELDS, "Shields");
 
         // Other
-        translationBuilder.add("text.weaponry.improved_spears", "Improved Spears");
         translationBuilder.add("creativetab.weaponry.weaponry", "Weaponry");
+        translationBuilder.add("text.weaponry.improved_spears", "Improved Spears");
+        translationBuilder.add("text.weaponry.cheaper_trims", "Cheaper Trims");
     }
 }
