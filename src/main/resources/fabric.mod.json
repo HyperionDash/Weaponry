@@ -12,7 +12,7 @@
 		"sources": "https://github.com/HyperionDash/Weaponry",
 		"issues": "https://github.com/HyperionDash/Weaponry/issues"
 	},
-	"license": "MIT",
+	"license": "Hyper License",
 	"icon": "assets/weaponry/icon.png",
 	"environment": "*",
 	"entrypoints": {
