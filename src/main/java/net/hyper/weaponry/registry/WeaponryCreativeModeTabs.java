@@ -12,7 +12,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
-public class WeaponryCreativeTabs {
+public class WeaponryCreativeModeTabs {
     public static final CreativeModeTab WEAPONRY = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(Weaponry.MOD_ID, "weaponry"),
             FabricCreativeModeTab.builder().icon(() -> new ItemStack(WeaponryItems.NETHERITE_GREATSWORD))
@@ -25,16 +25,9 @@ public class WeaponryCreativeTabs {
                         entries.accept(WeaponryItems.GOLDEN_GREATSWORD);
                         entries.accept(WeaponryItems.DIAMOND_GREATSWORD);
                         entries.accept(WeaponryItems.NETHERITE_GREATSWORD);
-
-                        entries.accept(WeaponryItems.WOODEN_SHIELD);
-                        entries.accept(WeaponryItems.COPPER_SHIELD);
-                        entries.accept(WeaponryItems.IRON_SHIELD);
-                        entries.accept(WeaponryItems.GOLDEN_SHIELD);
-                        entries.accept(WeaponryItems.DIAMOND_SHIELD);
-                        entries.accept(WeaponryItems.NETHERITE_SHIELD);
                     }).build());
 
-    public static void registerCreativeTabs() {
+    public static void init() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(entries -> {
             entries.insertAfter(Items.NETHERITE_SWORD, WeaponryItems.WOODEN_GREATSWORD,
                     WeaponryItems.STONE_GREATSWORD,
@@ -43,12 +36,6 @@ public class WeaponryCreativeTabs {
                     WeaponryItems.GOLDEN_GREATSWORD,
                     WeaponryItems.DIAMOND_GREATSWORD,
                     WeaponryItems.NETHERITE_GREATSWORD);
-            entries.insertAfter(Items.SHIELD, WeaponryItems.WOODEN_SHIELD,
-                    WeaponryItems.COPPER_SHIELD,
-                    WeaponryItems.IRON_SHIELD,
-                    WeaponryItems.GOLDEN_SHIELD,
-                    WeaponryItems.DIAMOND_SHIELD,
-                    WeaponryItems.NETHERITE_SHIELD);
         });
     }
 }

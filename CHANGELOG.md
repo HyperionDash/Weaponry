@@ -1,5 +1,9 @@
 # 1.0a+26.1:
 
+### 1.0a+26.1-DEV+0.2a
+- removed spear retexture
+- internal code changes
+
 ### 1.0a+26.1-DEV+0.1a
 - updated to 26.1
 - added copper greatswords

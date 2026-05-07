@@ -12,7 +12,7 @@ import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 public class WeaponryLootTableModifiers {
-    public static void modifyLootTables() {
+    public static void init() {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registry) -> {
             if(BuiltInLootTables.BURIED_TREASURE.equals(key)) {
                 LootPool.Builder poolBuilder = LootPool.lootPool()

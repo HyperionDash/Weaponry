@@ -3,7 +3,7 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.1,
-  "group": "iron_nugget",
+  "group": "iron_nugget_from_smelting_iron_gear",
   "ingredient": "weaponry:iron_greatsword",
   "result": {
     "id": "minecraft:iron_nugget"

@@ -3,7 +3,7 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.1,
-  "group": "gold_nugget",
+  "group": "gold_nugget_from_smelting_golden_gear",
   "ingredient": "weaponry:golden_greatsword",
   "result": {
     "id": "minecraft:gold_nugget"
