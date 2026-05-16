@@ -1,6 +1,6 @@
 package net.hyper.weaponry.mixin;
 
-import net.hyper.weaponry.registry.WeaponryItemTags;
+import net.hyper.weaponry.util.WeaponryItemTags;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.entity.player.AvatarRenderer;
 import net.minecraft.world.InteractionHand;

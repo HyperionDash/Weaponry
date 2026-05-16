@@ -2,7 +2,7 @@ package net.hyper.weaponry.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
-import net.hyper.weaponry.registry.WeaponryItemTags;
+import net.hyper.weaponry.util.WeaponryItemTags;
 import net.hyper.weaponry.registry.WeaponryItems;
 import net.minecraft.core.HolderLookup;
 

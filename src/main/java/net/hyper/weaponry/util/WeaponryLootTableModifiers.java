@@ -1,6 +1,7 @@
-package net.hyper.weaponry.registry;
+package net.hyper.weaponry.util;
 
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
+import net.hyper.weaponry.registry.WeaponryItems;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;

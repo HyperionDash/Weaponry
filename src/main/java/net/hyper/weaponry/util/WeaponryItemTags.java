@@ -1,4 +1,4 @@
-package net.hyper.weaponry.registry;
+package net.hyper.weaponry.util;
 
 import net.hyper.weaponry.Weaponry;
 import net.minecraft.core.registries.Registries;
